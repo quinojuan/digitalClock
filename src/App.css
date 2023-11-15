@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: rgb(44, 42, 42);
+}
+.clock-container {
+color: #fff;
+font-size: 150px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
