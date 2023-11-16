@@ -8,6 +8,7 @@ interface ClockState {
 
 const Clock = () => {
   const [clockState, setClockState] = useState<ClockState>();
+  const [containerClass, setContainerClass] = useState("clock-container");
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -35,14 +36,26 @@ const Clock = () => {
       });
     }
   };
+
+  const toggleClockContainerClass = () => {
+    setContainerClass((prevState) =>
+      prevState === "clock-container"
+        ? "black-clock-container"
+        : "clock-container"
+    );
+  };
+
   return (
     <>
-      <div className="clock-container">
+      <div className={containerClass}>
         {clockState
           ? `${clockState.hours}:${clockState.minutes}:${clockState.seconds}`
           : null}
       </div>
       <button onClick={toggleFullscreen}>Toggle Fullscreen</button>
+      <button onClick={toggleClockContainerClass}>
+        Light - Dark
+      </button>
     </>
   );
 };
