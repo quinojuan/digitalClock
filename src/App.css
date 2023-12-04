@@ -6,22 +6,26 @@
 }
 .clock-container {
   color: #fff;
-  font-size: 10vh;
+  background-color: rgb(44, 42, 42);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 80%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.clock-container p {
+  font-size: 23vw;
+}
+.black-clock-container p {
+  font-size: 23vw;
 }
 .black-clock-container {
   color: black;
   background-color: #fff;
-  font-size: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 80%;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }

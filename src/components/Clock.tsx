@@ -48,14 +48,14 @@ const Clock = () => {
   return (
     <>
       <div className={containerClass}>
-        {clockState
-          ? `${clockState.hours}:${clockState.minutes}:${clockState.seconds}`
-          : null}
+        <p>
+          {clockState
+            ? `${clockState.hours}:${clockState.minutes}:${clockState.seconds}`
+            : null}
+        </p>
       </div>
       <button onClick={toggleFullscreen}>Toggle Fullscreen</button>
-      <button onClick={toggleClockContainerClass}>
-        Light - Dark
-      </button>
+      <button onClick={toggleClockContainerClass}>Light - Dark</button>
     </>
   );
 };
