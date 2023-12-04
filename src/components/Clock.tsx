@@ -52,8 +52,8 @@ const Clock = () => {
             ? `${clockState.hours}:${clockState.minutes}:${clockState.seconds}`
             : null}
       </div>
-      <button onClick={toggleFullscreen}>Toggle Fullscreen</button>
-      <button onClick={toggleClockContainerClass}>Light - Dark</button>
+      <button onClick={toggleFullscreen}>Pantalla completa</button>
+      <button onClick={toggleClockContainerClass}>DÍA - NOCHE</button>
     </>
   );
 };

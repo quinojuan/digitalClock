@@ -26,6 +26,8 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-p {
-  background-color: none;
+button {
+  color: #fff;
+  padding: 3px;
+  margin-right: 10px; 
 }
